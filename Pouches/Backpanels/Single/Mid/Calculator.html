@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script type="text/javascript" defer>
+            // Units
+            const units = ["mm", "cm"];
+            // Initialize
+            window.onload = windowOnLoad;
+            let inputVelcroFemale100mm;
+            let inputMollePanel;
+            let costTotalBackpanel;
+            // Functions
+            function windowOnLoad()
+            {
+                // Debug Info
+                console.log("windowOnLoad");
+
+                // Variables
+                inputVelcroFemale100mm = document.getElementById("inputVelcroFemale100mm");
+                inputMollePanel = document.getElementById("inputMollePanel");
+                costTotalBackpanel = document.getElementById("costTotalBackpanel");
+              
+                // Event Listeners
+                inputVelcroFemale100mm.addEventListener("change", onValueChanged);
+                inputMollePanel.addEventListener("change", onValueChanged);
+              
+                // Initially calculate total Costs
+                this.onValueChanged();
+            }
+
+            function onValueChanged(event)
+            {
+                // Velcro Female
+                let costVelcroFemale100mm = costPerLength(
+                    "mm",                           // Unit
+                    80,                             // Length
+                    inputVelcroFemale100mm.value    // Input
+                );
+                // Molle Panel
+                let costMollePanel = inputMollePanel.value;
+                // Total
+                costTotalBackpanel.textContent = 
+                    Number(costVelcroFemale100mm) + 
+                    Number(costMollePanel);
+            }
+            function costPerLength(unit, length, cost)
+            {
+                switch (unit)
+                {
+                    case "mm": return length / 1000 * cost; 
+                }
+                return 0;
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+        <h3>Calculator Molle Backpanel</h3>
+        <b>Velcro Female (Breite 100mm)</b><br>
+        Preis: <input id="inputVelcroFemale100mm" type="number" min="0" step="0.01" value="4.97"> €/meter
+        <br>
+        <b>Molle Panel</b><br>
+        Preis: <input id="inputMollePanel" type="number" min="0" step="0.01" value="2.59"> €/piece
+        <br>        
+        <b>Gesamt: </b><a id="costTotalBackpanel"></a><a> €</a><br>
+        <br>
+        </div>
+    </body>
+</html>
