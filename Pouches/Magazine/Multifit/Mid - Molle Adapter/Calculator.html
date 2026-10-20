@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script type="text/javascript" defer>
+            const units = ["mm", "cm"];
+            window.onload = windowOnLoad;
+            // Variables
+            let inputMollePanel;
+            let inputMolleAdapter;
+            let inputVelcroFemale100mm;
+            let inputFabricWidth;
+            let inputFabricHeight;
+            let inputFabricCost;
+            let inputFlapVelcroMale25mm;
+            let inputFlapVelcroFemale25mm;
+            let totalCost;
+
+            function windowOnLoad()
+            {
+                // Debug Info
+                console.log("windowOnLoad");
+                // Variables
+                inputMollePanel = document.getElementById("inputMollePanel");
+                inputMolleAdapter = document.getElementById("inputMolleAdapter");
+                inputVelcroFemale100mm = document.getElementById("inputVelcroFemale100mm");
+                inputFabricWidth = document.getElementById("inputFabricWidth");
+                inputFabricHeight = document.getElementById("inputFabricHeight");
+                inputFabricCost = document.getElementById("inputFabricCost");
+                inputFlapVelcroMale25mm = document.getElementById("inputFlapVelcroMale25mm");
+                inputFlapVelcroFemale25mm = document.getElementById("inputFlapVelcroFemale25mm");
+                totalCost = document.getElementById("totalCost");
+                // Eventhandlers
+                inputMollePanel.addEventListener("change", onValueChanged);
+                inputMolleAdapter.addEventListener("change", onValueChanged);
+                inputVelcroFemale100mm.addEventListener("change", onValueChanged);
+                inputFabricWidth.addEventListener("change", onValueChanged);
+                inputFabricHeight.addEventListener("change", onValueChanged);
+                inputFabricCost.addEventListener("change", onValueChanged);
+                inputFlapVelcroMale25mm.addEventListener("change", onValueChanged);
+                inputFlapVelcroFemale25mm.addEventListener("change", onValueChanged);
+                // Initially calculate Cost
+                this.onValueChanged();
+            }
+            function costPerLength(length, cost)
+            {
+                return length / 1000 * cost;
+            }
+            function costPerSquareUnit(width, height, cost)
+            {
+                return cost / (width * height);
+            }
+            function roundToTwoDecimals(num) {
+                return Math.round(num * 100) / 100;
+            }            
+            function onValueChanged(event)
+            {
+                // Molle Panel
+                let costMollePanel = inputMollePanel.value;
+                // Molle Adapter
+                let costMolleAdapter = inputMolleAdapter.value;
+                // Velcro Female (100mm)
+                let costVelcroFemale100mm = costPerLength(
+                    90,
+                    inputVelcroFemale100mm.value
+                );
+                // Fabric
+                let costPerSquare = costPerSquareUnit(
+                    inputFabricWidth.value,
+                    inputFabricHeight.value,
+                    inputFabricCost.value
+                );
+                let costFabric =               //                height*width
+                    110 * 90 * costPerSquare + // Fabric Center: 110mm * 90mm
+                    110 * 45 * costPerSquare + // Fabric Left:   110mm * 45mm
+                    110 * 45 * costPerSquare;  // Fabric Right:  110mm * 45mm
+                // Velcro Male (25mm)
+                let costFlapVelcroMale25mm = 
+                    2 * costPerLength(100, inputFlapVelcroMale25mm.value) + // Vertical Strips Side Flaps
+                    3 * costPerLength(80, inputFlapVelcroMale25mm.value);   // Horizontal Strips
+                // Velcro Female (25mm)
+                let costFlapVelcroFemale25mm = 
+                    2 * costPerLength(100, inputFlapVelcroFemale25mm.value) + // Vertical Strips Side Flaps 
+                    4 * costPerLength(65, inputFlapVelcroFemale25mm.value) +  // Horizontal Strips Side Flaps
+                    1 * costPerLength(80, inputFlapVelcroFemale25mm.value);   // Horizontal Strip Lower Flap
+                // Total Cost
+                totalCost.textContent = roundToTwoDecimals(
+                    Number(costMollePanel) +
+                    Number(costMolleAdapter) +
+                    Number(costVelcroFemale100mm) +
+                    Number(costFabric) +
+                    Number(costFlapVelcroMale25mm) +
+                    Number(costFlapVelcroFemale25mm)
+                );
+            }
+
+        </script>
+    </head>
+    <body>
+        <div>
+        <h3>Multicaliber Magazine Pouch - Molle Adapter (Mid Cut)</h3>
+        <b>Molle Panel</b><br>
+        Cost: <input id="inputMollePanel" type="number" min="0" step="0.01" value="4.50" style="text-align: right"> €/piece
+        <br>
+        <b>Molle Adapter</b><br>
+        Cost: <input id="inputMolleAdapter" type="number" min="0" step="0.01" value="3.50" style="text-align: right"> €/piece
+        <br>
+        <b>Velcro Female (Width 100mm)</b><br>
+        Cost: <input id="inputVelcroFemale100mm" type="number" min="0" step="0.01" value="4.97" style="text-align: right"> €/meter
+        <br>
+        <b>Fabric</b><br>
+        Width: <input id="inputFabricWidth" type="number" min="0" value="1500" style="text-align: right"> mm<br>
+        Height: <input id="inputFabricHeight" type="number" min="0" value="1000" style="text-align: right"> mm<br>
+        Cost: <input id="inputFabricCost" type="number" step="0.01" min="0" value="35.00" style="text-align: right"> €
+        <br>
+        <b>Velcro-Male (Width 25mm)</b><br>
+        Cost: <input id="inputFlapVelcroMale25mm" type="number" min="0" step="0.01" value="1.36" style="text-align: right"> €/meter
+        <br>
+        <b>Velcro Female (Width 25mm)</b><br>
+        Cost: <input id="inputFlapVelcroFemale25mm" type="number" min="0" step="0.01" value="1.36" style="text-align: right"> €/meter
+        <br>
+        <b>Total: </b><a id="totalCost"></a><a> €</a><br>
+        <br>
+        </div>
+    </body>
+</html>

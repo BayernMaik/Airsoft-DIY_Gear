@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="144.17358mm"
+   height="104.99999mm"
+   viewBox="0 0 144.17358 104.99999"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   sodipodi:docname="Instructions_3.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.1212764"
+     inkscape:cx="154.28845"
+     inkscape:cy="138.68124"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect11"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,2.6458333,0,1 @ F,0,0,1,0,2.6458333,0,1 @ F,0,0,1,0,2.6458333,0,1 @ F,0,0,1,0,2.6458333,0,1"
+       radius="10"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect10"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,2.6458333,0,1 @ F,0,0,1,0,2.6458333,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="10"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect9"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,2.6458333,0,1 @ F,0,0,1,0,2.6458333,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="10"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <rect
+       x="459.94717"
+       y="72.099823"
+       width="44.751614"
+       height="105.66354"
+       id="rect9" />
+    <linearGradient
+       id="linearGradient7"
+       inkscape:swatch="gradient">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop8" />
+    </linearGradient>
+    <rect
+       x="702.32477"
+       y="45.708248"
+       width="297.9826"
+       height="14.943081"
+       id="rect5" />
+    <rect
+       x="279.6976"
+       y="278.4545"
+       width="274.71448"
+       height="58.212437"
+       id="rect2" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer_Backpanel"
+     transform="translate(-60,-79.999994)">
+    <rect
+       style="fill:#000000;fill-opacity:0.25;stroke:#000000;stroke-width:0.487683;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6"
+       width="89.512314"
+       height="104.51231"
+       x="60.243843"
+       y="80.243835"
+       inkscape:label="Fabric" />
+    <rect
+       style="fill:#000000;fill-opacity:0.501742;stroke:#000000;stroke-width:0.555319;stroke-dasharray:none;stroke-opacity:0.5"
+       id="rect7"
+       width="89.444679"
+       height="4.4446807"
+       x="60.27766"
+       y="80.277664"
+       inkscape:label="Fold" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;display:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="52.247257"
+       y="83.614761"
+       id="text7"
+       inkscape:label="Fold"><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="0"
+         y="0">Fold</tspan></text>
+    <rect
+       style="fill:#408080;fill-opacity:0.25;stroke:#408080;stroke-width:0.475692;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6-82"
+       width="88.524307"
+       height="98.524307"
+       x="60.737846"
+       y="80.737846"
+       inkscape:label="Velcro" />
+    <path
+       style="fill:#000000;fill-opacity:0;stroke:#ff0000;stroke-width:0.251;stroke-dasharray:0.502, 0.502;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 60,82.625315 h 90"
+       id="path8"
+       inkscape:label="Seam" />
+    <path
+       style="fill:#000000;fill-opacity:0;stroke:#ff0000;stroke-width:0.251;stroke-dasharray:0.502, 0.502;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 60,177.6255 h 90"
+       id="path8-7"
+       inkscape:label="Seam" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#408080;fill-opacity:1;stroke:none;stroke-width:0.151;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="106.05818"
+       y="126.8085"
+       id="text9"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="fill:#408080;fill-opacity:1;stroke:none;stroke-width:0.151"
+         x="106.05818"
+         y="126.8085">Velcro Female</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#408080;fill-opacity:1;stroke:none;stroke-width:0.151"
+         x="106.05818"
+         y="130.77725"
+         id="tspan10">100mm x 90mm</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#408080;fill-opacity:1;stroke:none;stroke-width:0.151"
+         x="106.05818"
+         y="134.746"
+         id="tspan11">(height x width)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#000002;fill-opacity:1;stroke:none;stroke-width:0.151;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="74.689941"
+       y="183.16226"
+       id="text12"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         style="fill:#000002;fill-opacity:1;stroke:none;stroke-width:0.151"
+         x="74.689941"
+         y="183.16226">Fabric 110mm x 90mm (height x width)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.151;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="151.37663"
+       y="82.833267"
+       id="text13"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.151"
+         x="151.37663"
+         y="82.833267"
+         id="tspan15">#1 Fold Fabrics seam clearance</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:0.151"
+       x="151.25433"
+       y="87.307495"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="stroke-width:0.151"
+         x="151.25433"
+         y="87.307495">#2 Place Velcro on folded Fabric</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:0.151"
+       x="151.25433"
+       y="92.026825"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="stroke-width:0.151"
+         x="151.25433"
+         y="92.026825">#3. Place seams on folded Fabric </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.151"
+         x="151.25433"
+         y="95.995575"
+         id="tspan4">and bottom of Velcro</tspan></text>
+  </g>
+</svg>
