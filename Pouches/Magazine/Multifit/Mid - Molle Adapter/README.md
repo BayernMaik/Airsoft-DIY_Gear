@@ -51,9 +51,9 @@
 <a id="id_description"></a>Magazine Pouch Multifit (Mid Cut)</a>
 <a href="#id_navigation" style="color: #000000; text-decoration: none">&#x21B0;</a>
 </h2>
-<img src="./20261020_151146.jpg" border="0" width="30%"></img>
-<img src="./20261020_145817.jpg" border="0" width="30%"></img>
-<img src="./20261020_145842.jpg" border="0" width="30%"></img>
+<a href="./20261020_151146.jpg"><img src="./20261020_151146.jpg" width="33%"></a>
+<a href="./20261020_145817.jpg"><img src="./20261020_145817.jpg" width="33%"></a>
+<a href="./20261020_145842.jpg"><img src="./20261020_145842.jpg" width="33%"></a>
 
 <!-- Resources -->
 <h3>
